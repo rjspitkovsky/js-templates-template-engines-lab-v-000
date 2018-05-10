@@ -29,6 +29,12 @@
       </form>
       </script>
 
+      <script id="comment-template" type="text/x-lodash-template">
+        <p><%= comment %></p>
+
+        <footer> By: <%= commenter %></footer> 
+      </script>
+
       <form id="post-form" onSubmit="createPost();">
         <label>Name:</label>
         <input type="text"id="poster-name"><br>
