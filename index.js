@@ -1,7 +1,13 @@
 function createPost() {
-  const title = document.getElementById("post-title").innerHTML
-  const author = document.getElementById("post-author").innerHTML
-  const body = document.getElementById("post-body").innerHTML
+  let postTemplateFn = _.template(document.getElementById("post-template").innerHTML)
+  let pageTemplateFn = _.template(document.getElementById("page-template").innerHTML) 
+  let commentsTemplateFn = _.template(document.getElementById("comments-template").innerHTML)
 
-  const postTemplate = _.template(document.getElementById("post-template").innerHTML)
+
+  let title = document.getElementById("post-title").innerHTML
+  let author = document.getElementById("post-author").innerHTML
+  let body = document.getElementById("post-body").innerHTML
+
+
+  let newPost = postTemplateFn({post-title: title, post-author: author, post-body: body})
 }
