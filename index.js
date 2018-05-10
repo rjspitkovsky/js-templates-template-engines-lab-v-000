@@ -12,4 +12,6 @@ function createPost() {
 
   let postAttributes = postTemplateFn({post-title: title, post-author: author, post-body: body})
   let comments = commentsTemplateFn()
+
+  let postArea = document.getElementById("post")
 }
