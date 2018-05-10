@@ -41,7 +41,7 @@ function createPost(){
 
 function postComment() {
   var commenter = document.getElementById("commenter-name").value
-  var comment = document.getElementById("commenter").value 
+  var comment = document.getElementById("commenter").value
 
   var commentTemplate = _.template(document.getElementById("comment-template").innerHTML)
 
