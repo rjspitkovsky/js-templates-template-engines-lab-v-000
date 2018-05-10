@@ -1,18 +1,18 @@
 function createPost(){
-  // Create templates for post 
+  // Create templates for post
   let pageTemplate = _.template(document.getElementById("page-template").innerHTML)
   let postTemplate = _.template(document.getElementById("post-template").innerHTML)
   let commentsTemplate = _.template(document.getElementById("comments-template").innerHTML)
 
-  // Establish values for individual post 
+  // Establish values for individual post
   let postTitle = document.getElementById("postTitle").value
   let postAuthor = document.getElementById("postAuthor").value
   let postBody = document.getElementById("postBody").value
 
-  // Create page area for posts 
+  // Create page area for posts
   document.getElementsByTagName("main")[0].innerHTML += pageTemplate()
-  
-  // Create 
+
+  // Create
   let postSection = postTemplate({ 'title': postTitle, 'body': postBody, 'poster': postAuthor });
   let commentsSection = commentsTemplate();
   let postElement = document.getElementById("post");
