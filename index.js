@@ -38,3 +38,11 @@ function createPost(){
   postElement.innerHTML = blogSection;
   postElement.getElementsByTagName("footer")[0].innerHTML = commentsSection;
 }
+
+function postComment() {
+  var commenter = document.getElementById("commenter-name").innerHTML 
+  var comment = document.getElementById("commenter").innerHTML 
+
+  var commentTemplate = document.getElementById("comment-template").innerHTML
+
+}
