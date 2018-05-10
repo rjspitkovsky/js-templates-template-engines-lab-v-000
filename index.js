@@ -14,4 +14,6 @@ function createPost() {
   let comments = commentsTemplateFn()
 
   let postArea = document.getElementById("post")
+  postArea.innerHTML = postAttributes
+  postArea.getElementsByTagName("footer")[1].innerHTML = comments
 }
