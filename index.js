@@ -40,9 +40,11 @@ function createPost(){
 }
 
 function postComment() {
-  var commenter = document.getElementById("commenter-name").innerHTML 
-  var comment = document.getElementById("commenter").innerHTML 
+  var commenter = document.getElementById("commenter-name").value
+  var comment = document.getElementById("commenter").value 
 
-  var commentTemplate = document.getElementById("comment-template").innerHTML
+  var commentTemplate = _.template(document.getElementById("comment-template").innerHTML)
 
+  var commentDiv = document.getElementById("comments")
+  commentDiv.innerHTML += commentTemplate({"commenter": commenter, "comment": comment})
 }
