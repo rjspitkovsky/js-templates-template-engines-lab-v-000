@@ -10,6 +10,6 @@ function createPost() {
 
   document.getElementsByTagName("main")[0].innerHTML += pageTemplateFn()
 
-  let newPost = postTemplateFn({post-title: title, post-author: author, post-body: body})
+  let postAttributes = postTemplateFn({post-title: title, post-author: author, post-body: body})
   let comments = commentsTemplateFn()
 }
