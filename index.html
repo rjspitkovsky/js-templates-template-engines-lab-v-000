@@ -20,6 +20,15 @@
 
       <script id="comments-template" type="text/x-lodash-template">
       <div id="comments"></div>
+      // <form onSubmit="postComment();">
+      // <label>Name:</label>
+      // <input type="text" id="commenter-name"><br>
+      // <label>Your comment:</label>
+      // <input type="text" id="comment"><br>
+      // <input type="submit">
+      // </form>
+      </script>
+
       <form onSubmit="postComment();">
       <label>Name:</label>
       <input type="text" id="commenter-name"><br>
@@ -27,7 +36,6 @@
       <input type="text" id="comment"><br>
       <input type="submit">
       </form>
-      </script>
 
       <script id="comment-template" type="text/x-lodash-template">
         <p><%= comment %></p>
